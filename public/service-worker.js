@@ -56,6 +56,7 @@ self.addEventListener('fetch', (event) => {
         fetch(event.request)
             .then(response => {
                 console.log(event.request)
+                console.log(response)
                 // Make coply/clone of response
                 const resClone = response.clone();
                 // Open Cache

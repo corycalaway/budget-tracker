@@ -10,6 +10,7 @@ const cacheAssets = [
     './js/index.js',
     './js/idb.js',
     './css/styles.css',
+    './api/transaction'
     
 ];
 
