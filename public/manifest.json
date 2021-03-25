@@ -6,5 +6,5 @@
     "background_color": "#01579b",
     "start_url": "../index.html",
     "display": "standalone",
-    "description": "An app that allows you to view upcoming food events."
+    "description": "An app that allows you to track your budget."
   }
