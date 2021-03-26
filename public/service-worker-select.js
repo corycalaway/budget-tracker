@@ -5,7 +5,9 @@ const cacheName = APP_PREFIX + VERSION
 
 // array of all pages to cache
 const cacheAssets = [
+    '/',
     './index.html',
+    '/manifest.json',
     './js/main.js',
     './js/index.js',
     './js/idb.js',
