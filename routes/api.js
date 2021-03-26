@@ -1,9 +1,19 @@
 const router = require("express").Router();
 const Transaction = require("../models/transaction.js");
-
+// var alert = document.getElementById('alert')
 router.post("/api/transaction", ({body}, res) => {
   Transaction.create(body)
     .then(dbTransaction => {
+      console.log(dbTransaction.value)
+      // if(dbTransaction.value > 0) {
+      //   console.log('You have added a deposit to your budget tracker!')
+      //   // const alert = document.querySelector('#alert')
+      //   // var alert = document.getElementById('alert')
+      //   // alert.innerHTML = "whatever";
+
+      // } else {
+      //   console.log('You have added an expense to your budget tracker!')
+      // }
       res.json(dbTransaction);
     })
     .catch(err => {

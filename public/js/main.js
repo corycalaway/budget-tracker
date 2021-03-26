@@ -13,3 +13,7 @@ if('serviceWorker' in navigator) {
         .catch(err => console.log(`Service Worker: Error: ${err}`));
     });
 }
+
+Notification.requestPermission(function(status) {
+    console.log('Notification permission status:', status);
+});
